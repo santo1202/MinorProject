@@ -61,9 +61,14 @@
             <a href='/'><img src="{{x.Photo.url}}" alt=""></a>
             <div class="text">{{x.Item_Lost}}</div>
             <p>{{x.Description_of_Item}}</p>
-            <a href="/view/"><button type="submit" class="btn btn-lg btn-success">ViewPost</button></a>
-            <p><a href="mailto:'{{x.Email}}'">Alert Owner</a></p>
-            <a href="tel:'{{x.Phone_No}}'">Click to Call Owner</a>
+            <div class="btns">
+            <button class="button1">
+                <a href="mailto:'{{x.Email}}'" data-inline="true">Mail</a>
+            </button>
+            <button class="button1">
+                <a href="tel:'{{x.Phone_No}}'" data-inline="true">Call</a>
+            </button>
+            </div>
 
         </div>
         </div>
